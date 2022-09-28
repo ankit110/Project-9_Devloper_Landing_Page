@@ -1,0 +1,712 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+html{
+  font-size: 16px;
+  overflow-x: hidden; 
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+
+/*<---- Header Section ---->*/
+header {
+  height: 30em;
+  background-color: #3400ff;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4em;
+  color: #fff;
+}
+
+.nav-item {
+  display: flex;
+  margin-left: 1em;
+  margin-top: 2em;
+}
+
+.nav-item:hover {
+  background-color: none;
+  box-shadow: 10px 10px 15px #111;
+  cursor: pointer;
+}
+
+
+
+.nav-item-active {
+  display: flex;
+  margin-left: 1em;
+  margin-top: 2em;
+  background-color: #fff;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  border-radius: 2em;
+  color: #3400ff;
+}
+
+.nav-item-active:hover {
+  background-color: none;
+  box-shadow: 10px 10px 15px #111;
+  cursor: pointer;
+}
+
+svg {
+  height: 1.6em;
+  width: 1.2em;
+}
+
+.logo {
+  display: flex;
+  margin-top: -2em;
+  margin-left: 2em;
+}
+
+.header-text {
+  margin-left: 2em;
+  margin-top: 4em;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.header-text h2 {
+  display: flex;
+  font-size: 1.5em;
+}
+
+.header-text p {
+  font-size: 0.6em;
+}
+
+.header-image {
+  float: right;
+  margin-top: -10em;
+  height: 28em;
+  width: 28em;
+}
+
+
+@media (max-width: 950px) {
+  .header-image {
+    height: 18em;
+    width: 18em;
+  }
+
+  .header-text {
+    font-size: 0.9em;
+  }
+
+  .nav-item {
+    font-size: 70%;
+    font-weight: bolder;
+  }
+
+  
+
+  .nav-item-active {
+    font-size: 70%;
+    font-weight: bolder;
+    background-color: #fff;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    border-radius: 0.2em;
+    color: #3400ff;
+  }
+
+  header {
+    height: 18em;
+  }
+}
+
+/* <---- Companies ----> */ 
+
+.companies {
+  display: flex;
+  margin-left: 2em;
+  margin-top: 1em;
+  width: 55%;
+}
+
+.company-items {
+  display: flex;
+  margin-right: 2em;
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+  /* white-space: nowrap; */
+}
+
+.company-items:hover {
+  background-color: none;
+  box-shadow: 10px 10px 15px #111;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  header {
+    height: 42em;
+
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero>.header-text {
+    position: static;
+    margin-top: 30em;
+    margin-left: 3em;
+  }
+
+  
+  .hero>.header-text h2 {
+    font-size: 1.5em;
+  }
+
+  .header-text p {
+    font-size: 0.6em;
+  }
+
+
+
+  .header-image {
+    display: flex;
+    justify-content: center;
+    float: left;
+    margin-top: -31em;
+    width: 80%;
+    height: 22em;
+    margin-left: 2em;
+  }
+
+  .nav-item {
+    font-size: 0.8em;
+  }
+
+  .nav-item-active {                  
+    font-size: 0.8em;
+  }
+
+
+  .companies {
+    width: 80%;
+    justify-content: space-between;
+    
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    width: 100%;
+  }
+
+  
+
+  .nav-item {
+    display: none;
+  }
+  
+  .nav-item-active {
+    padding: 0.4em 1em;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: -2em;
+    height: 1.5em;
+    float: left;
+  }
+
+  .header-image {
+    display: flex;
+    justify-content: center;
+    margin-right: 5em;
+  }
+
+  .header-text {
+    width: 80%;
+    
+  }
+
+  .companies {
+    gap: 0em;
+  }
+
+  .company-items {
+    margin-right: 0.9em;
+  }  
+
+}
+
+
+/* <---- API Section ----> */
+
+.api {
+  margin-left: 2em;
+}
+
+.api h1 {
+  margin-top: 2em;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  margin-top: 2em;
+  margin-left: -1em;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 15em;
+  gap: 1em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.card-logo {
+  width: 20%;
+}
+
+.card-active {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 15em;
+  gap: 1em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.card-active:hover {
+  box-shadow: 10px 10px 15px #111;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 15px #111;
+  cursor: pointer;
+}
+
+.card-head-active {
+  color: #3400ff;
+}
+
+@media (max-width: 767px) {
+  .api-heading {
+      font-size: 1.5rem;
+      text-align: center;
+      width: 100%;
+
+  }
+}
+
+/* <---- Blog Section ----> */
+
+.blog-heading {
+  margin-left: 2em;
+  margin-top: 2em;
+  font-weight: 900;
+}
+
+.blog-cards {
+  display: flex;
+  width: 100%;
+  margin-top: 1.5em;
+  margin-left: 2em;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  display: flex;
+  background-color: #fff;
+  width: 48%;
+  margin-right: 1em;
+  position: relative;
+  border-top-left-radius: 3em;
+}
+.blog-content{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 65%;
+  margin: auto 2rem;
+}
+.blog-content h6{
+  color: #491bfd;
+}
+
+.blog-content h6, .blog-content h3, .blog-content small{
+  margin: auto 0;
+}
+
+.blog-bottom {
+  position: absolute;
+  bottom: -2em;
+  right: 35%;
+}
+
+.blog-author {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 55%;
+  white-space: nowrap;
+}
+
+
+.blog-image img {
+  width: 100%;
+}
+
+.blog-card:hover {
+  box-shadow: 10px 10px 20px #111;
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .blog-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .blog-card {
+    width: 95%;
+    margin-right: 1em;
+  }
+}
+
+
+/* <-- FAQ SECTION --> */
+
+.faq-section {
+  margin-top: 2em;
+  padding-left: 2em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #0557ee3b
+}
+
+.faq-content h2{
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.faq-content h4 {
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+
+.faq-content>h4+h4 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.faq-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  background-color: #3400ff;
+  color: #fff;
+  padding: 0.6em 1em;
+  border: none;
+  border-radius: 0.5em;
+}
+
+button:hover {
+  background-color: none;
+  box-shadow: 10px 10px 15px #111;
+  cursor: pointer;
+}
+
+.faq-section>.faq-content>button {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 800px) {
+  .faq-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-image {
+    order: -1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .faq-section {
+    flex-wrap: wrap;
+  }
+  .faq-image img{
+    width: 100%;
+  }
+
+
+}
+
+
+/* <---- Download ----> */
+
+.download-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 15em;
+  background-color: #fff;
+  padding: 2em 0;
+}
+
+.download-content {
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+.download-content>h1>span {
+  font-weight: 400;
+}
+
+.download-email {
+  margin-top: 1em;
+  margin-right: 2em;
+}
+
+
+
+@media (min-width: 800px) {
+  
+  
+  .download-email>form {
+    background-color: rgba(6, 153, 252, 0.39);
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  form {
+    /* This bit sets up the horizontal layout */
+    display:flex;
+    flex-direction:row;
+    
+    /* This bit draws the box around it */
+    border:1px solid grey;
+    border-radius: 2em;
+  
+    /* I've used padding so you can see the edges of the elements. */
+    padding-left: 1em;
+    padding-right: 0.2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+  }
+  
+  input {
+    /* Tell the input to use all the available space */
+    flex-grow:2;
+    width: 25em;
+    /* And hide the input's outline, so the form looks like the outline */
+    border:none;
+    background-color: transparent;
+    border-radius: 2em;
+  }
+  
+  input:focus {
+    /* removing the input focus blue box. Put this on the form if you like. */
+    outline: none;
+  }
+  
+  form>button {
+    /* Just a little styling to make it pretty */
+    border:1px solid blue;
+    width: 10em;
+    background:blue;
+    color:white;
+    border-radius: 2em;
+  }
+}
+
+
+
+@media (max-width: 800px) {
+  .download-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .download-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .download-email>form {
+    
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+  }
+
+  .download-email {
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    gap: 0.2em;
+
+  }
+
+  input {
+    /* Tell the input to use all the available space */
+    flex-grow:2;
+    width: 28em;
+    background-color: #0699fc63;
+    /* And hide the input's outline, so the form looks like the outline */
+    border:none;
+    border-radius: 2em;
+
+    padding: 1em 1em;
+  }
+
+}
+
+
+/* <---- Footer Section ----> */
+
+.footer-section {
+  background-color: #3400ff;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  height: 15em;
+  padding-top: 4em;
+  list-style-type: none;
+}
+
+
+.footer-left {
+  color: #fff;
+  margin-left: 2em;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.list-items:hover {
+  background-color: none;
+  box-shadow: 10px 10px 15px #111;
+  cursor: pointer;
+}
+
+.footer-section>.footer-right {
+  color: #fff;
+  margin-right: 3em;
+}
+
+.footer-right>.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-logos {
+  margin-right: 1.4em;
+}
+
+.footer-logos:hover {
+  background-color: none;
+  box-shadow: 10px 10px 15px #111;
+  cursor: pointer;
+}
+
+.logos-list {
+  float: right;
+  display: flex;
+  list-style-type: none;
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.list-items:hover {
+  background-color: none;
+  box-shadow: 10px 10px 15px #111;
+  cursor: pointer;
+}
+
+.list-items {
+  margin-right: 1em;
+}
+
+
+@media (max-width: 550px) {
+
+  .footer-section {
+    height: 20em;
+  }
+  .logos-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    float: left;
+    margin-left: 2em;
+    margin-top: 1.5em;
+  }
+
+  .footer-right>.footer-right {
+    float: left;
+    margin-left: 2em;
+  }
+
+  .list {
+    white-space: nowrap;
+    flex-direction: column;
+  }
+}
