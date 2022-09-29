@@ -49,7 +49,7 @@ nav {
 
 .nav-item:hover {
   background-color: none;
-  box-shadow: 10px 10px 15px #111;
+  color: #ffc400;
   cursor: pointer;
 }
 
@@ -159,7 +159,7 @@ svg {
 
 .company-items:hover {
   background-color: none;
-  box-shadow: 10px 10px 15px #111;
+  color: #ffc400;
   cursor: pointer;
 }
 
@@ -408,6 +408,35 @@ svg {
     width: 95%;
     margin-right: 1em;
   }
+
+  .blog-content {
+    font-size: 1.2em;
+    white-space: nowrap;
+  }
+
+  .blog-author {
+    bottom: 0.2em;
+  }
+}
+
+@media (max-width: 500px) {
+  .blog-content {
+    font-size: 0.7em;
+    white-space: nowrap;
+  }
+
+  .blog-author {
+    font-size: 0.9em;
+    bottom: 0.2em;
+  }
+
+  .blog-card-bottom-image {
+    height: 3em;
+  }
+
+  .blog-bottom {
+    bottom: -1.6em;
+  }
 }
 
 
@@ -640,7 +669,7 @@ button:hover {
 
 .list-items:hover {
   background-color: none;
-  box-shadow: 10px 10px 15px #111;
+  color: #ffc400;
   cursor: pointer;
 }
 
@@ -661,7 +690,6 @@ button:hover {
 
 .footer-logos:hover {
   background-color: none;
-  box-shadow: 10px 10px 15px #111;
   cursor: pointer;
 }
 
@@ -677,7 +705,7 @@ button:hover {
 
 .list-items:hover {
   background-color: none;
-  box-shadow: 10px 10px 15px #111;
+  color: #ffc400;
   cursor: pointer;
 }
 
