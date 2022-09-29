@@ -426,8 +426,9 @@ svg {
   }
 
   .blog-author {
-    font-size: 0.9em;
+    font-size: 0.8em;
     bottom: 0.2em;
+    margin-right: 0.4em;
   }
 
   .blog-card-bottom-image {
@@ -641,6 +642,15 @@ button:hover {
 
 }
 
+@media (max-width: 400px) {
+  .download-email>form>input {
+    width: 80%;
+    margin-left: 1.5em;
+  }
+
+
+}
+
 
 /* <---- Footer Section ----> */
 
@@ -730,7 +740,7 @@ button:hover {
 
   .footer-right>.footer-right {
     float: left;
-    margin-left: 2em;
+    margin-left: 0.9em;
   }
 
   .list {
