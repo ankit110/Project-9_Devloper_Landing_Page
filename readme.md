@@ -4,7 +4,7 @@
 
 # 📌 ** Project Link 👇** 
 
-**[Developer_Home_Landing_page](https://stellular-sprinkles-550eb8.netlify.app/)**
+**[Developer_Home_Landing_page](https://unrivaled-haupia-5027f1.netlify.app/)**
 
 # 📌 This Project is given in **"JavaScript Full stack Web Development Bootcamp"** by iNeuron.
 
